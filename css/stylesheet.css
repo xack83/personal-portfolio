@@ -1,0 +1,109 @@
+
+/* Fixing some Bootstrap issues*/
+.container-fluid {
+    padding: 0px 0px 0px 0px;
+}
+.span12 {text-align: center; width: 50%;}
+
+/* HTML TAGS */
+body {
+  margin: 0 auto;
+  text-align: center;
+  font-family: Lato, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: orange;
+}
+
+/* MAIN DIVS */
+#wrapper {
+  margin: 0 auto;
+	text-align: center;
+}
+
+/* HEADER */
+
+#menu-left {
+  float:left
+}
+
+#menu-right {
+  float: right;
+}
+
+.menu_items {
+  margin: 0 auto;
+	text-align: center;
+	display: inline-block;
+  padding: 0px 20px 0px 0px;
+}
+
+/* BODY MAIN DIVS */
+
+.content {
+  width:100%; height:700px;
+  margin: 0 auto;
+  text-align: center;
+  position:relative;
+}
+
+.content div, p, img {
+  padding-top: 10px;
+}
+
+/* WELCOME */
+
+#welcome {
+  background-image: url("../img/back01.jpg");
+  background-repeat: repeat-x;
+  color: #ddd;
+  padding-top: 60px;
+}
+
+#name {
+  font-family: Open Sans Condensed;
+  font-size: 60px;
+}
+
+.icon-medium {
+  font-size: 30px;
+  padding: 5px;
+}
+
+#photo {
+  width: 100px;
+  border-radius: 100%;
+}
+
+/* PORTFOLIO */
+
+#portfolio {
+  background-color: #201F27;
+  padding-top: 60px;
+}
+
+/* SKILLS */
+
+#skills {
+  background-color: #952;
+  padding-top: 60px;
+}
+
+.paragraph {
+  padding: 20px 100px 20px 100px;
+}
+
+/* CONTACT */
+
+#contact {
+  background-color: #7a3;
+  padding-top: 60px;
+}
+
+.footer {
+  width: 100%; height: 100px;
+  background-color: #7ab;
+}
+
