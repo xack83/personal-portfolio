@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
-  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="js/scripts.js"></script>
@@ -32,9 +33,9 @@
         <h1 id="name">CARLOS RODRIGO</h1>  
       </div>
       <div class="col-md-6 col-md-offset-3">
-        <p>Hello! My name is Carlos, I live in Spain and I am passionate about programming. I love to get sucked up in building sites, figuring out how to solve a problem or... and I spent ridiculous hours with this stuff. Really!</p>
-        <p>My skills range from front-end development with HTML, CSS, JQuery and Javascript to Back-end with Node.js, Angular.js, PHP, MySQL and MongoDB. I have a strong background as well in graphic design and video animation.</p>
-        <p>I invite you to see my work. Feel free to contact me. I'm available for hire or for working in your project as a freelance.</p>
+        <p>¡Hola! Soy un  <strong>desarrollador web fullstack</strong> de Valencia, España. Me gusta programar y construir herramientas y sitios útiles, y atractivos.</p>
+        <p>Tengo experiencia con múltiples tecnologías web, desde maquetación con <strong>HTML y CSS</strong>, creación de sitios dinámicos con <strong>JavaScript y JQuery</strong>, programación backend con <strong>PHP y Node.js</strong> y uso de frameworks y CMS como <strong>Bootstrap, Joomla</strong>, etc.</p>
+        <p>Te invito a que le eches un vistazo a mi trabajo y a que contactes conmigo si te interesa que colabore en tu proyecto</p>
         <div><img src="img/photo.png" id="photo"></img></div>
         <div>
           <a href="#"><i class="fa fa-twitter icon-medium"></i></a>
@@ -49,14 +50,88 @@
     <!-- PORTFOLIO -->
     <div class="container-fluid content" id="portfolio">
       <h1>Portfolio</h1>
+      <div class="row">
+        <div class="portfolio-items"></div>
+        <div class="portfolio-items"></div>
+        <div class="portfolio-items"></div>
+      </div>
+      <div class="row">
+        <div class="portfolio-items"></div>
+        <div class="portfolio-items"></div>
+        <div class="portfolio-items"></div>
+      </div>
     </div>
 
     <!-- SKILLS -->
     <div class="container-fluid content" id="skills">
       <div class="row"><h1>Skills</h1></div>
       <div class="row">
-        <div class="col-md-6 paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget purus ut urna ultricies tristique. Phasellus eros felis, gravida ac felis ac, finibus hendrerit ligula. Vivamus dictum libero porta egestas malesuada. Morbi varius ut nulla id posuere. Nam non libero tortor. Quisque dictum ultrices odio, vel suscipit turpis hendrerit quis. Cras ac odio massa. Nulla vitae tortor erat. Vestibulum tempor purus a laoreet gravida. Etiam vestibulum, augue vel efficitur iaculis, est sapien lacinia dolor, in tempor odio odio non odio. Etiam fringilla feugiat tortor, non facilisis velit tempus non. Nulla ultrices arcu consequat iaculis mollis.</div>
-        <div class="col-md-6">Toolbox</div>
+        <div class="col-md-6 paragraph">
+          <table id="bio">
+            <tr>
+              <td valign="top"><img src="img/front-icon.png" style="width:50px"></img></td>
+              <td>
+                <div class="skill-title">Front-end</div>
+                <p>Para el front-end combino el uso de HTML y CSS para la parte de diseño, JavaScript y JQuery para proporcionar una experiencia dinámica al usuario.</p>
+              </td>
+            </tr>
+            <tr>
+              <td valign="top"><img src="img/back-icon.png" style="width:50px"></td>
+              <td>
+                <div class="skill-title">Back-end</div>
+                <p>En el back-end suelo trabajar con PHP+MySQL o últimamente con Node.js + MongoDB</p>
+              </td>
+            </tr>
+            <tr>
+              <td valign="top"><img src="img/others-icon.png" style="width:50px"></td>
+              <td>
+                <div class="skill-title">Others</div>
+                <p>sgsh sh sh sfh sfhsfhsfhs sfh sfhsfhs sfh s</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        
+        <div class="col-md-6">
+          <table id="skill-progress">
+            <tr><td>HTML</td><td>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+              </div>
+            </td></tr>
+            <tr><td>CSS</td><td>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+              </div>
+            </td></tr>
+            <tr><td>JavaScript</td><td>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+              </div>
+            </td></tr>
+            <tr><td>JQuery</td><td>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%;"></div>
+              </div>
+            </td></tr>
+            <tr><td>PHP</td><td>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+              </div>
+            </td></tr>
+            <tr><td>Node.js</td><td>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 5%;"></div>
+              </div>
+            </td></tr>
+            <tr><td>Graphic Design</td><td>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"></div>
+              </div>
+            </td></tr>
+          </table>
+        </div>
+      </div>
     </div>
 
     <!-- CONTACT -->
