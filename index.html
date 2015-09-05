@@ -7,64 +7,114 @@
   <link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/parallax.js-1.3.1/parallax.js"></script>
   <script src="js/scripts.js"></script>
 </head>
 <body>
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header navbar-left">
-        <a class="navbar-brand" href="#">Carlos Rodrigo</a>
-        <p class="navbar-text">Full Stack Developer</p>
+        <a class="navbar-brand" href="#welcome"><img src="img/logo.png" id="logo"></a>
       </div>
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#welcome">Home</a></li>
+        <li class="active"><a href="#welcome">Portada</a></li>
         <li><a class="page-scroll" href="#portfolio">Portfolio</a></li>
-        <li><a class="page-scroll" href="#skills">Skills</a></li>
-        <li><a class="page-scroll" href="#contact">Contact</a></li>
+        <li><a class="page-scroll" href="#skills">Habilidades</a></li>
+        <li><a class="page-scroll" href="#contact">Contacto</a></li>
       </ul>
     </div>
   </nav>
-  <div class="container-fluid">
+
+  <div class="container">
 
     <!-- WELCOME -->
-    <div class="container-fluid content" id="welcome">
+    <div class="container content" data-parallax="scroll" data-image-src="img/bg-welcome.png" id="welcome">
       <div class="row">
-        <h1 id="name">CARLOS RODRIGO</h1>  
+        <h1 id="name">CARLOS RODRIGO</h1> 
+        <h1 id="subname">Desarrollador Full Stack</h1>
       </div>
+      <div class="row paragraph-pad"><img src="img/photo.png" id="photo"></img></div>
       <div class="col-md-6 col-md-offset-3">
-        <p>¡Hola! Soy un  <strong>desarrollador web fullstack</strong> de Valencia, España. Me gusta programar y construir herramientas y sitios útiles, y atractivos.</p>
-        <p>Tengo experiencia con múltiples tecnologías web, desde maquetación con <strong>HTML y CSS</strong>, creación de sitios dinámicos con <strong>JavaScript y JQuery</strong>, programación backend con <strong>PHP y Node.js</strong> y uso de frameworks y CMS como <strong>Bootstrap, Joomla</strong>, etc.</p>
-        <p>Te invito a que le eches un vistazo a mi trabajo y a que contactes conmigo si te interesa que colabore en tu proyecto</p>
-        <div><img src="img/photo.png" id="photo"></img></div>
-        <div>
-          <a href="#"><i class="fa fa-twitter icon-medium"></i></a>
-          <a href="#"><i class="fa fa-github icon-medium"></i></a>
-          <a href="#"><i class="fa fa-linkedin icon-medium"></i></a>
-          <a href="#"><i class="fa fa-fire icon-medium"></i></a>
-          <a href="#"><i class="fa fa-envelope icon-medium"></i></a>
+        <div class="row paragraph-pad">¡Hola! Soy un  <strong>desarrollador web fullstack</strong> de Valencia, España. Me gusta programar y construir herramientas y sitios útiles, y atractivos.</div>
+        <div class="row paragraph-pad">Tengo experiencia con múltiples tecnologías web, desde maquetación con <strong>HTML y CSS</strong>, creación de sitios dinámicos con <strong>JavaScript y JQuery</strong>, programación backend con <strong>PHP, Node.js, MySQL y MongoDB</strong> y uso de frameworks como <strong>Bootstrap</strong>strong> o CMS como Joomla</strong>.</div>
+        <div class="row paragraph-pad">Te invito a que le eches un vistazo a mi trabajo y a que contactes conmigo si te interesa que colabore en tu proyecto</div>
+        <div class="row paragraph-pad">
+          <a href="https://twitter.com/xack83"><i class="fa fa-twitter icon-medium"></i></a>
+          <a href="https://github.com/xack83"><i class="fa fa-github icon-medium"></i></a>
+          <a href="https://es.linkedin.com/in/carlosrodrigo83"><i class="fa fa-linkedin icon-medium"></i></a>
+          <a href="http://www.freecodecamp.com/xack83"><i class="fa fa-fire icon-medium"></i></a>
+          <a href="mailto:carlosrodrigo83@gmail.com"><i class="fa fa-envelope icon-medium"></i></a>
         </div>
       </div>
     </div>
 
     <!-- PORTFOLIO -->
-    <div class="container-fluid content" id="portfolio">
+    <div class="container content" data-parallax="scroll" data-image-src="img/bg-portfolio.png" id="portfolio">
+      
       <h1>Portfolio</h1>
+
       <div class="row">
-        <div class="portfolio-items"></div>
-        <div class="portfolio-items"></div>
-        <div class="portfolio-items"></div>
+        <div class="portfolio-item">
+          <div class="item-image"><img src="img/thumb-iglevalencia.png"></div>
+          <div class="item-info">
+            <div class="item-title"><a href="http://iglevalencia.org/joomla/">IgleValencia</a></div>
+            <div class="item-tools">Joomla</div>
+            <div class="item-tools">PHP</div>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="item-image"><img src="img/thumb-google.png"></div>
+          <div class="item-info">
+            <div class="item-title"><a href="https://htmlpreview.github.io/?https://github.com/xack83/google-homepage/blob/master/index.html">Google Homepage</a></div>
+            <div class="item-tools">HTML</div>
+            <div class="item-tools">CSS</div>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="item-image"><img src="img/thumb-sketchpad.png"></div>
+          <div class="item-info">
+            <div class="item-title"><a href="https://htmlpreview.github.io/?https://github.com/xack83/sketchpad/blob/master/index.html">Etch-a-Sketch</a></div>
+            <div class="item-tools">HTML</div>
+            <div class="item-tools">CSS</div>
+            <div class="item-tools">JQuery</div>
+          </div>
+        </div>
       </div>
+
       <div class="row">
-        <div class="portfolio-items"></div>
-        <div class="portfolio-items"></div>
-        <div class="portfolio-items"></div>
+        <div class="portfolio-item">
+          <div class="item-image"><img src="img/thumb-weather.png"></div>
+          <div class="item-info">
+            <div class="item-title">Weather App <em>(en construcción)</em></div>
+            <div class="item-tools">JavaScript</div>
+            <div class="item-tools">Bootstrap</div>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="item-image"><img src="img/thumb-wikipedia.png"></div>
+          <div class="item-info">
+            <div class="item-title">Wikipedia Search <em>(en construcción)</em></div>
+            <div class="item-tools">JQuery</div>
+            <div class="item-tools">Bootstrap</div>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="item-image"><img src="img/thumb-pomodoro.png"></div>
+          <div class="item-info">
+            <div class="item-title">Pomodoro App <em>(en construcción)</em></div>
+            <div class="item-tools">JQuery</div>
+            <div class="item-tools">Bootstrap</div>
+          </div>
+        </div>
       </div>
+
     </div>
 
     <!-- SKILLS -->
-    <div class="container-fluid content" id="skills">
-      <div class="row"><h1>Skills</h1></div>
+    <div class="container content" data-parallax="scroll" data-image-src="img/bg-skills.png" id="skills">
+      <div class="row"><h1>Habilidades</h1></div>
       <div class="row">
         <div class="col-md-6 paragraph">
           <table id="bio">
@@ -72,27 +122,27 @@
               <td valign="top"><img src="img/front-icon.png" style="width:50px"></img></td>
               <td>
                 <div class="skill-title">Front-end</div>
-                <p>Para el front-end combino el uso de HTML y CSS para la parte de diseño, JavaScript y JQuery para proporcionar una experiencia dinámica al usuario.</p>
+                <p>En el front-end trabajo con HTML y CSS para el diseño del sitio, JavaScript y JQuery para proporcionar una experiencia dinámica al usuario, además de utilizar frameworks como Bootstrap, y generar y personalizar sitios web usando CMS como Joomla o Wordpress.</p>
               </td>
             </tr>
             <tr>
               <td valign="top"><img src="img/back-icon.png" style="width:50px"></td>
               <td>
                 <div class="skill-title">Back-end</div>
-                <p>En el back-end suelo trabajar con PHP+MySQL o últimamente con Node.js + MongoDB</p>
+                <p>Para el back-end suelo trabajar con PHP + MySQL o últimamente con Node.js + MongoDB, utilizando Express.js como framework.</p>
               </td>
             </tr>
             <tr>
-              <td valign="top"><img src="img/others-icon.png" style="width:50px"></td>
+              <td valign="top"><img src="img/others-icon2.png" style="width:50px"></td>
               <td>
-                <div class="skill-title">Others</div>
-                <p>sgsh sh sh sfh sfhsfhsfhs sfh sfhsfhs sfh s</p>
+                <div class="skill-title">Otros</div>
+                <p>Diseño gráfico, animación, administración de sistemas Linux y gestión de redes son otros de los campos en los que también tengo amplia experiencia. Unido a esto estoy familiarizado con metodologias Agile (Scrum), control de versiones con Git y gestión de servicios IT bajo ITIL.</p>
               </td>
             </tr>
           </table>
         </div>
         
-        <div class="col-md-6">
+        <div class="col-md-6 paragraph">
           <table id="skill-progress">
             <tr><td>HTML</td><td>
               <div class="progress">
@@ -135,11 +185,31 @@
     </div>
 
     <!-- CONTACT -->
-    <div class="content" id="contact">
-      <h1>Contact</h1>
+    <div class="container content" data-parallax="scroll" data-image-src="img/bg-contact.png" id="contact">
+      <h1>Contacto</h1>
+      <div class="row paragraph-pad contact-pad">Si quieres puedes ponerte en contacto conmigo escribiendome a <strong>carlosrodrigo83@gmail.com</strong> o visitar alguno de mis perfiles online.</div>
+      <div class="row paragraph-pad">Actualmente estoy disponible para trabajar como <strong>freelance</strong> o <strong>empleado</strong>.</div>
+      <div class="row paragraph-pad"><a href="mailto:carlosrodrigo83@gmail.com"><button class="btn btn-primary">Contacta conmigo</button></a></div>
+      <div class="row paragraph-pad">
+        <a href="https://twitter.com/xack83"><i class="fa fa-twitter icon-large"></i></a>
+        <a href="https://github.com/xack83"><i class="fa fa-github icon-large"></i></a>
+        <a href="https://es.linkedin.com/in/carlosrodrigo83"><i class="fa fa-linkedin icon-large"></i></a>
+        <a href="http://www.freecodecamp.com/xack83"><i class="fa fa-fire icon-large"></i></a>
+      </div>
     </div>
-    <div class="footer">Footer</div>
-  </div>
 
+    <!-- FOOTER -->
+    <div class="footer">
+      <ul class="list-inline">
+        <li><a href="#welcome">Portada</a></li>
+        <li><a class="page-scroll" href="#portfolio">Portfolio</a></li>
+        <li><a class="page-scroll" href="#skills">Habilidades</a></li>
+        <li><a class="page-scroll" href="#contact">Contacto</a></li>
+      </ul>
+      <div class="copy">Copyright 2015. Carlos Rodrigo.</div>
+      <div class="copy2">Sitio elaborado con HTML, CSS, JQuery y Bootstrap.</div>
+    </div>
+
+  </div>
 </body>
 </html>
